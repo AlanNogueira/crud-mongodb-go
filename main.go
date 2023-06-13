@@ -52,9 +52,7 @@ func requestHandler(w http.ResponseWriter, req *http.Request) {
 	}
 
 	if err != nil {
-
 		response = map[string]interface{}{"error": err.Error()}
-
 	}
 
 	enc := json.NewEncoder(w)
